@@ -17,13 +17,13 @@ function add2(n) {
   return n + two
 
   // Feel free to move things around!
-
 }
-var theFunk = funkyFunction
+
+
 var funkyFunction = function() {
   return function() {
-    return "FUNKY!"
+  return  "FUNKY!"
   }
 }
-console.log(theFunk)
+var theFunk = funkyFunction()()
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
