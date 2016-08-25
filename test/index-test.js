@@ -1,22 +1,25 @@
 /*global describe, it */
 
 
+var animal = 'dog'
 
 function myAnimal() {
-  return 'dog'
+  return animal
 }
 
 
 
 function yourAnimal() {
-  return 'cat'
+  var animal = 'cat'
+  return animal
 }
 
 
 
 
 function add2(n) {
-  return (n + 2)
+  const two = 2
+  return (n + two)
 }
 
 
@@ -24,7 +27,9 @@ function funkyFunction() {
   return ('function')
 }
 
-
-function theFunk () {
+var funkyFunction = function () {
+return function () {
   return 'FUNKY!'
-}
+}}
+
+var theFunk = funkyFunction () ()
