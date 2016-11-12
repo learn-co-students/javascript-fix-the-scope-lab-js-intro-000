@@ -21,11 +21,11 @@ function add2(n) {
   // Feel free to move things around!
 }
 
-var funkyFunction = function kurwa() {
-  return function() {
+var funkyFunction = function() {
+  return function kurwa() {
     return "FUNKY!"
   }
 }
 
 // We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
-var theFunk = kurwa()
+var theFunk = function kurwa();
