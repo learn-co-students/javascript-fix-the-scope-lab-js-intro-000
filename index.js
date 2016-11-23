@@ -1,8 +1,13 @@
 var animal = 'dog'
 
 function myAnimal() {
+ animal= "cat"
   return animal
 }
+myAnimal()
+
+
+
 
 function yourAnimal() {
   // How can we make sure that this function
