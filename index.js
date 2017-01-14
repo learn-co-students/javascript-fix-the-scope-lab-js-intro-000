@@ -24,6 +24,7 @@ var funkyFunction = function() {
   }
 }
 
-// We want 'funkyFunction' on the line below to return a function that returns "FUNKY!" -- how can we accomplish that?
+// We want 'funkyFunction' on the line below to return a function that returns "FUNKY!", 
+// so that 'theFunk' equals "FUNKY!" -- how can we accomplish that?
 // NOTE: To pass this final test, you only need to modify the code below this line.
 var theFunk = funkyFunction
