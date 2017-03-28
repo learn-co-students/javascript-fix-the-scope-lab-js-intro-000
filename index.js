@@ -13,10 +13,10 @@ function yourAnimal() {
 }
 
 function add2(n) {
-  return n =+ two
+  const two = 2
 
   // Feel free to move things around!
-  const n + 2
+  return n + two
 }
 
 var funkyFunction = function() {
@@ -27,4 +27,4 @@ var funkyFunction = function() {
 
 // We want 'funkyFunction' on the line below to return a function that returns "FUNKY!" -- how can we accomplish that?
 // NOTE: To pass this final test, you only need to modify the code below this line.
-funkyFunction();
+var theFunk = funkyFunction()()
