@@ -40,3 +40,12 @@ var funkyFunction = function()
 // NOTE: To pass this final test, you only need to modify the code below this line.
 
 var theFunk = funkyFunction()();
+
+/*
+The above is basically the same thing as saying:
+
+var theFunk = funkyFunction() {
+  return theFunk()
+}
+
+*/
