@@ -4,24 +4,23 @@ const babel = require('babel-core');
 const jsdom = require('jsdom');
 const path = require('path');
 
+
 before(function(done) {
-  const js = path.resolve(__dirname, '..', 'index.js');
-  const babelResult = babel.transformFileSync(js, {
+  const babelResult = babel.transformFileSync(path.resolve(__dirname, '..', 'index.js'), {
     presets: ['es2015']
   });
 
-  const html = path.resolve(__dirname, '..', 'index.html');
+  //const src = path.resolve(__dirname, '..', 'index.js');
 
-  jsdom.env(html, [], {
-    src: babelResult.code,
-    virtualConsole: jsdom.createVirtualConsole().sendTo(console)
-  }, (err, window) => {
+  jsdom.env('<div></div>', [], {src: babelResult.code}, (err, window) => {
     if (err) {
       return done(err);
     }
 
-    global.window = window;
+    Object.keys(window).forEach(key => {
+      global[key] = window[key];
+    });
 
     return done();
   });
-});
+}); 
