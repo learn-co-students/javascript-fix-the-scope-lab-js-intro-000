@@ -27,4 +27,5 @@ var funkyFunction = function() {
 // NOTE: you only need to modify the code below this line.
 var theFunkNumberTwo = funkyFunction(), theFunk = theFunkNumberTwo()
 
-// JT: Is this the expected solution?
+// "Elegant" solution is:
+// var theFunk = funkyFunction()()
