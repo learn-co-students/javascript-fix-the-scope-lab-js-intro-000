@@ -22,10 +22,7 @@ function myAnimal() {
       expect(window.yourAnimal.toString()).toNotContain("return 'cat'")
     })
   })
-function yourAnimal() {
-  var animal = 'cat';
-  return animal;
-}
+
 
 
 
