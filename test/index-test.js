@@ -1,4 +1,4 @@
-/*global describe, it */
+var animal = "dog";
 
 describe('Fix the Scope', function() {
   describe('myAnimal()', function() {
@@ -6,6 +6,12 @@ describe('Fix the Scope', function() {
       expect(window.myAnimal()).toEqual('dog')
     })
   })
+function myAnimal() {
+  return animal;
+}
+
+
+
 
   describe('yourAnimal()', function() {
     it('returns your animal', function(){
@@ -17,12 +23,17 @@ describe('Fix the Scope', function() {
     })
   })
 
+
+
+
+
   describe('add2(n)', function() {
     it('adds two to n', function() {
       const n = Math.floor(Math.random() * 1000)
       expect(window.add2(n)).toEqual(n + 2)
     })
   })
+
 
   describe('funkyFunction()', function() {
     it('returns a function', function() {
