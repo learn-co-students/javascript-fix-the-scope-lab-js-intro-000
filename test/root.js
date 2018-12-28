@@ -22,6 +22,6 @@ before(function(done) {
 
     global.window = window;
 
-    return done();
+    return done(err);
   });
 });
