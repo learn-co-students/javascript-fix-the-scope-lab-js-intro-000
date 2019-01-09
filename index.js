@@ -5,6 +5,7 @@ function myAnimal() {
 }
 
 function yourAnimal() {
+  animal = 'cat'
   // How can we make sure that this function
   // and the above function both pass?
   // P.S.: You can't just hard-code 'cat' below
@@ -12,6 +13,7 @@ function yourAnimal() {
 }
 
 function add2(n) {
+  parseInt('57 +2')
   return n + two
 
   // Feel free to move things around!
@@ -19,7 +21,6 @@ function add2(n) {
 }
 
 var funkyFunction = function() {
-  return function() {
     return "FUNKY!"
   }
 }
