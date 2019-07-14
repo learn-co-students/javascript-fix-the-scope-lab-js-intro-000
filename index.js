@@ -29,3 +29,4 @@ var funkyFunction = function() {
 // you only need to modify the code below this line.
 var theFunk = funkyFunction()
 theFunk = theFunk()
+// could i just use this as the last line?? : theFunk()
