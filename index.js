@@ -1,35 +1,27 @@
-function myAnimal (){
-  var animal = 'dog'
+var animal = 'dog'
 
-  return (animal)
+function myAnimal() {
+  return animal
 }
 
-myAnimal ()
-
-function yourAnimal (){
-  var animal = 'cat'
-
-  return (animal)
+function yourAnimal() {
+  // How can we make sure that this function
+  // and the above function both pass?
+  // P.S.: You can't just hard-code 'cat' below
+  return animal
 }
 
-yourAnimal ()
+function add2(n) {
+  return n + two
 
-function add2(n){
-  var x= 2
-
-  return (n+x)
+  // Feel free to move things around!
+  const two = 2
 }
 
-add2 (n)
-
-function funkyFunction(){ // scope of funkyFunction aka lexical scope for innerFunky
-
-  return function innerFunky () {
+var funkyFunction = function() {
+  return function() {
     return "FUNKY!"
   }
 }
-var theFunk = funkyFunction()
 
-theFunk() // 'FUNKY!'
-
-// don't understand why the test keeps failing
+var theFunk = funkyFunction ()()
