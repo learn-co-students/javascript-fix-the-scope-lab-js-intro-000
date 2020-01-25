@@ -25,4 +25,3 @@ var funkyFunction = function() {
 // NOTE: you only need to modify the code below this line.
 var outer = funkyFunction();
 var theFunk = outer();
-theFunk();
