@@ -1,32 +1,40 @@
-var animal = 'dog'
+return animal
+}
 
 function myAnimal() {
-  // You should not need to modify this function
-  return animal
+var animal = 'dog';
+return animal;
 }
 
 function yourAnimal() {
-  // The tests expect this function to return `animal` just like the previous function
-  // However, you cannot simply modify the existing variable declared on line 1 in the global scope 
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: Hard-coding 'cat' below will not work
-  return animal
+ // How can we make sure that this function
+ // and the above function both pass?
+ // P.S.: You can't just hard-code 'cat' below
+ return animal
+}
+
+function yourAnimal() {
+ var animal = 'cat';
+ return animal;
 }
 
 function add2(n) {
-  return n + two
+ return n + two
 
-  // Feel free to move things around!
-  const two = 2
+ // Feel free to move things around!
+ const two = 2
+}
+
+function add2(n) {
+var two = 2
+ return n + two;
 }
 
 var funkyFunction = function() {
-  return function() {
-    return "FUNKY!"
-  }
-}
+ return function() {
+   return "FUNKY!"
+@@ -26,3 +41,4 @@ var funkyFunction = function() {
 
-// We want to set theFunk equal to "FUNKY!" using our funkyFunction.
-// NOTE: you only need to modify the code below this line.
+// We want this to return a function that returns "FUNKY!" -- how can we accomplish that?
 var theFunk = funkyFunction
+var theFunk = funkyFunction()()
