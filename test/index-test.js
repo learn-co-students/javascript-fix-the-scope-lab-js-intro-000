@@ -1,5 +1,5 @@
 /*global describe, it */
-
+var animal ='cat';
 describe('Fix the Scope', function() {
   describe('myAnimal()', function() {
     it('returns the animal variable', () => {
@@ -46,3 +46,22 @@ describe('Fix the Scope', function() {
   })
 
 })
+
+function myAnimal(){
+  var animal = 'dog';
+  return animal;
+}
+function yourAnimal(){
+  return animal;
+}
+function add2(n){
+  const two = 2
+return parseInt(n, 10) + two;
+}
+var funkyFunction = function() {
+  return function() {
+    return "FUNKY!"
+  }
+}
+
+var theFunk = funkyFunction()();
