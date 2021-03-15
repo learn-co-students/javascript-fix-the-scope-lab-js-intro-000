@@ -6,27 +6,57 @@ function myAnimal() {
 }
 
 function yourAnimal() {
-  // The tests expect this function to return `animal` just like the previous function
-  // However, you cannot simply modify the existing variable declared on line 1 in the global scope 
-  // How can we make sure that this function
-  // and the above function both pass?
-  // P.S.: Hard-coding 'cat' below will not work
-  return animal
+var animal = 'cat';
+return animal
 }
 
 function add2(n) {
-  return n + two
+  return n + 2
 
-  // Feel free to move things around!
   const two = 2
 }
 
+// function printName(name) {
+//   console.log(name)
+// }
+//
+// printName("Roxana")
+//
+// var samePrintName = function(name) {
+//   console.log(name)
+// }
+//
+// samePrintName("Roxana")
+//
+// function giveAPrintFunction() {
+//   return printName
+// }
+// var fn = giveAPrintFunction()
+// fn("Roxana")
+//
+//
+//
+// inner("Roxana")
+//
+// function outer() {
+//   var example = "Greetings "
+//   return function inner(name) {
+//     return example + name
+//   }
+// }
+//
+//
 var funkyFunction = function() {
   return function() {
     return "FUNKY!"
   }
 }
+//
+// var thisIsAFunction = funkyFunction()
+// var funky = thisIsAFunction()
+
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction
+var ffunction = funkyFunction()
+var theFunk = ffunction()
