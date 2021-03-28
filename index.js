@@ -12,11 +12,7 @@ function yourAnimal() {
   // and the above function both pass?
   // P.S.: Hard-coding 'cat' below will not work
   var animal = 'cat'
-  return function innerAnimal() {
-    var otherAnimal = 'unicorn'
-    return animal
-  }
-  // return animal
+  return animal
 }
 
 function add2(n) {
@@ -35,5 +31,4 @@ var funkyFunction = function() {
 
 // We want to set theFunk equal to "FUNKY!" using our funkyFunction.
 // NOTE: you only need to modify the code below this line.
-var theFunk = funkyFunction()
-theFunk()
+var theFunk = funkyFunction()()
